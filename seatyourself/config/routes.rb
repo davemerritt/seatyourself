@@ -1,4 +1,10 @@
 Seatyourself::Application.routes.draw do
+  get "reservations/new"
+  get "reservations/create"
+  get "reservations/edit"
+  get "reservations/update"
+  get "reservations/show"
+  get "reservations/destroy"
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
