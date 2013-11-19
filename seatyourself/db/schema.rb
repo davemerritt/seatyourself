@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131119183801) do
+ActiveRecord::Schema.define(version: 20131119222211) do
 
   create_table "reservations", force: true do |t|
     t.integer  "restaurant_id"
@@ -38,6 +38,10 @@ ActiveRecord::Schema.define(version: 20131119183801) do
     t.string   "salt"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "remember_me_token"
+    t.datetime "remember_me_token_expires_at"
   end
+
+  add_index "users", ["remember_me_token"], name: "index_users_on_remember_me_token"
 
 end
