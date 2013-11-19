@@ -1,2 +1,16 @@
-<h1>Restaurants#new</h1>
-<p>Find me in app/views/restaurants/new.html.erb</p>
+<%= form_for @restaurant do |f| %>
+  <p>
+    <%= f.label "Name" %><br>
+    <%= f.text_field "name" %>
+  </p>
+   <p>
+    <%= f.label "Address" %><br>
+    <%= f.text_field "address" %>
+  </p>
+    <%= f.label "Location" %><br>
+    <%= f.text_field "location" %>
+  </div>
+  <p>
+    <%= f.submit "Save" %> 
+  </p>
+<% end %>

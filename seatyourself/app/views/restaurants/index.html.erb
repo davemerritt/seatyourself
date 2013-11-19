@@ -1,1 +1,10 @@
-<h3> Things! </h3>
+<% @restaurant.each do |restaurant| %>
+<h1><%= restaurant.name %></h1>
+	<p>
+		<%= restaurant.location %>
+		<%= restaurant.address %>
+		<%= restaurant.hours %>
+	</p>
+<% end %>
+
+<%= link_to "New Restaurant", new_restaurant_path %> 
