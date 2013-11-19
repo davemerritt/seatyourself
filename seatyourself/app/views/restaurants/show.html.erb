@@ -20,5 +20,16 @@
         	</ul>
     	</div>
     	<% end %>  
+	
+	<div class="field">
+		<%= f.label 'Guest' %>
+		<%= f.text_field 'guests' %>
+	</div>
+	
+		<%= f.submit 'Save' %>
 	<% end %>
 <% end %>
+
+
+
+<%= link_to 'Back', restaurants_path %>
