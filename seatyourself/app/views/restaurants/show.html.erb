@@ -19,13 +19,17 @@
 		        <% end %>
         	</ul>
     	</div>
-    	<% end %>  
+    <% end %>  
 	
 	<div class="field">
 		<%= f.label 'Guest' %>
 		<%= f.text_field 'guests' %>
 	</div>
-	
+
+	<div class="field">
+		<%= f.label 'Time' %>
+		<%= f.number_field 'time_slot', in: 12..22 %>
+	</div>	
 		<%= f.submit 'Save' %>
 	<% end %>
 <% end %>
