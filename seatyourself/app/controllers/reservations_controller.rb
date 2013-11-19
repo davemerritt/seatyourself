@@ -10,9 +10,9 @@ class ReservationsController < ApplicationController
     @reservation.user_id = current_user.id
   
     if @reservation.save
-      redirect_to :root
+      redirect_to :root, :notice => "Reservation Made!"
     else
-      render restaurants_path
+      render :template => 'restaurants/show'
     end
   end
 
