@@ -3,6 +3,15 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .container {
-  width: 75%;
+  width: 85%;
   text-align: center;
+
+  .jumbotron {
+    text-align: left;
+    background-image: url(http://upload.wikimedia.org/wikipedia/commons/a/a1/Toronto_Skyline_at_dusk.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: #F9F9F9;
+  }
 }
