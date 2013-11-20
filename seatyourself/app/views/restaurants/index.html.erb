@@ -8,10 +8,14 @@
  
 
 <% @restaurant.each do |restaurant| %>
-<h1><%= link_to restaurant.name, restaurant %></h1>
-	<p>
-		<%= restaurant.location %>
-		<%= restaurant.address %>
-		<%= restaurant.hours %>
-	</p>
+  <div class="rest">
+    <div class="thumbnail">
+      <div class="caption">
+        <h2><%= link_to restaurant.name, restaurant %></h2>
+        <p><%= restaurant.address %></p>
+        <p><%= restaurant.location %></p>
+        <p><%= restaurant.hours %></p>
+      </div>
+    </div>
+  </div>
 <% end %>
