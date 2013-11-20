@@ -1,6 +1,6 @@
 <%= link_to 'Delete Restaurant', @restaurant, :confirm => "Delete this Restaurant?", :method => :delete %>
 
-<h1><%= @restaurant.name %></h1>
+<h1 class=><%= @restaurant.name %></h1>
 	<p>
 		<%= @restaurant.address %>
 		<%= @restaurant.location %>
@@ -24,12 +24,12 @@
     <% end %>  
 	
 	<div class="field">
-		<%= f.label 'Guest' %>
+		<%= f.label 'Guest' %><br>
 		<%= f.number_field 'guests', :max => 100 %>
 	</div>
 
 	<div class="field">
-		<%= f.label 'Time' %>
+		<%= f.label 'Time' %><br>
 		<%= f.number_field 'time_slot', in: 12..22 %>
 	</div>	
 		<%= f.submit 'Save' %>
